@@ -22,3 +22,26 @@ git push -u originazure --all --force
 Create three web apps for dev, prod and uat. For prod, add a staging deployment slot.
 
 <img src="/pictures/web_app.png" title="web app"  width="900">
+
+
+### Create .NET Project
+
+- create the project
+```
+dotnet new sln --name "TodoApp"
+dotnet new mvc -n TodoApp.Web
+dotnet sln TodoApp.sln add TodoApp.Web\TodoApp.Web.csproj
+```
+
+- build it
+```
+dotnet build
+```
+<img src="/pictures/build_app.png" title="build app"  width="900">
+
+
+- run the application
+```
+dotnet .\src\TodoApp.Web\bin\Debug\net7.0\TodoApp.Web.dll
+```
+<img src="/pictures/run_app.png" title="run app"  width="900">
