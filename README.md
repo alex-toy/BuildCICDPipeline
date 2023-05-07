@@ -47,7 +47,7 @@ dotnet .\src\TodoApp.Web\bin\Debug\net7.0\TodoApp.Web.dll
 <img src="/pictures/run_app.png" title="run app"  width="900">
 
 
-## Create Pipeline
+## Create CI Pipeline
 
 - choose classic editor
 <img src="/pictures/create_pipeline.png" title="create pipeline with classic editor"  width="900">
@@ -63,4 +63,26 @@ dotnet .\src\TodoApp.Web\bin\Debug\net7.0\TodoApp.Web.dll
 
  - edit the pipeline so that it runs automatically when a commit is done on a branch :
 <img src="/pictures/trigger_pipeline.png" title="trigger the pipeline "  width="900">
- Now the pipeline is automatically triggered.
+
+ Now the pipeline is automatically triggered. This is called **continuous integration**.
+
+
+## Create CD Pipeline
+
+This section corresponds to the release pipeline.
+
+- create **Release Pipeline**. Choose **App Service Deployment**
+<img src="/pictures/release_pipeline.png" title="release pipeline"  width="900">
+
+- add artifact. Enable **continuous deployment trigger**
+<img src="/pictures/release_pipeline1.png" title="release pipeline"  width="900">
+
+- add **dev** stage
+<img src="/pictures/release_pipeline2.png" title="release pipeline"  width="900">
+
+- now, on each push, the release pipeline is automatically triggered :
+<img src="/pictures/release_pipeline3.png" title="release pipeline"  width="900">
+
+
+At this time, I get this error :
+Error: Failed to get resource ID for resource type 'Microsoft.Web/Sites' and resource name 'cicd-helloworld-dev'. Error: connect ENETUNREACH 169.254.169.254:80
