@@ -55,3 +55,12 @@ dotnet .\src\TodoApp.Web\bin\Debug\net7.0\TodoApp.Web.dll
 - choose azure repo and then ASP.NET core as a template and disable the *Test* task
 <img src="/pictures/create_pipeline2.png" title="create pipeline with azure repo"  width="900">
 <img src="/pictures/create_pipeline3.png" title="create pipeline with azure repo"  width="900">
+
+- Run pipeline
+<img src="/pictures/run_pipeline.png" title="run pipeline "  width="900">
+ 
+ At this time, you can retrieve the artifact.
+
+ - edit the pipeline so that it runs automatically when a commit is done on a branch :
+<img src="/pictures/trigger_pipeline.png" title="trigger the pipeline "  width="900">
+ Now the pipeline is automatically triggered.
