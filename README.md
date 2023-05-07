@@ -45,3 +45,13 @@ dotnet build
 dotnet .\src\TodoApp.Web\bin\Debug\net7.0\TodoApp.Web.dll
 ```
 <img src="/pictures/run_app.png" title="run app"  width="900">
+
+
+## Create Pipeline
+
+- choose classic editor
+<img src="/pictures/create_pipeline.png" title="create pipeline with classic editor"  width="900">
+
+- choose azure repo and then ASP.NET core as a template and disable the *Test* task
+<img src="/pictures/create_pipeline2.png" title="create pipeline with azure repo"  width="900">
+<img src="/pictures/create_pipeline3.png" title="create pipeline with azure repo"  width="900">
